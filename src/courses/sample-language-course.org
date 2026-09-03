@@ -1,0 +1,66 @@
+#+TITLE: Spanish for Beginners (demo test course)
+#+SUBTITLE: Term 1
+:PROPERTIES:
+:COURSE_TYPE: language
+:COURSE_SOURCE_LANG: en
+:COURSE_TARGET_LANG: es
+:END:
+
+* Lesson 1
+:PROPERTIES:
+:CUSTOM_ID: lesson-1
+:END:
+
+** Vocabulary
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: vocabulary
+:END:
+
+*** hola
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: hello
+:POS: interjection
+:END:
+
+*** adiós
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: goodbye
+:POS: interjection
+:END:
+
+*** gato
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: cat
+:POS: noun
+:END:
+
+** Notes
+Spanish greetings vary by time of day and formality; "hola" is
+appropriate in almost any register.
+
+* Lesson 2
+:PROPERTIES:
+:CUSTOM_ID: lesson-2
+:END:
+
+** Vocabulary
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: vocabulary
+:END:
+
+*** comer
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: to eat
+:POS: verb
+:END:
+
+*** beber
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: to drink
+:POS: verb
+:END:

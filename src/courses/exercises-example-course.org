@@ -1,0 +1,241 @@
+#+TITLE: Exercises Collection - Special Blocks
+:PROPERTIES:
+:COURSE_TYPE: base
+:COURSE_LICENSE: MIT
+:END:
+
+* Chapter 1: Exercises with instructions and hints
+:PROPERTIES:
+:CUSTOM_ID: lesson-1
+:END:
+
+** Text section with exercises
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+Sentence Builder Exercise
+
+#+begin_exercise :type sentence-builder
+#+instruction: Arrange the words to form a correct sentence.
+#+hint: Start with the pronoun
+cats black like I
+:ANSWERS:
+ - I like black cats
+:END:
+#+end_exercise
+
+- Multiple Choice Exercise
+
+#+begin_exercise :type multiple-choice
+#+instruction: Select the correct translation for "House".
+- Casa
+- Perro
+- Gato
+:ANSWERS:
+0
+:END:
+#+end_exercise
+
+- Pairs Exercise
+
+#+begin_exercise :type pairs
+| House | Casa  |
+| Dog   | Perro |
+| Cat   | Gato  |
+#+end_exercise
+
+#+begin_exercise :type pairs
+| [[./assets/rice.jpg][cooked rice]]       | {{{rb(一碗米饭,yī wǎn mǐfàn)}}} |
+| [[./flower-tea.jpg][flower tea]]         | {{{rb(一壶花茶,yī hú huāchá)}}} |
+| [[./scrambled-eggs.jpg][scrambled eggs]] | {{{rb(一盘西红柿炒鸡蛋,yī pán xīhóngshì chǎo jīdàn)}}} |
+| [[./assets/roast-duck.jpg][roast duck]]   | {{{rb(一只烤鸭,yī zhī kǎo yā)}}} |
+#+end_exercise
+
+- Sentence Order Exercise
+
+#+begin_exercise :type sentence-order
+#+instruction: Reorder sentences to form a logical story.
+#+hint: Chronological order
+1. I woke up at 7 AM.
+2. I brushed my teeth and had breakfast.
+3. I left the house for work.
+#+end_exercise
+
+- Cloze Multi Exercise
+
+#+begin_exercise :type cloze-multi
+#+hint: Geography and currency
+The capital of France is {|city} and its currency is {}.
+:ANSWERS:
+ - Paris
+ - Euro
+:END:
+#+end_exercise
+
+- cloze drag
+
+#+begin_exercise :type cloze-drag
+#+instruction: fill blank with correct characters (words)
+- 我想买一张[[手机]]卡。
+- 我听不[[懂]]，可以再说一遍吗？[[慢]]一点。
+- 可以用[[支付宝]]吗？
+#+end_exercise
+
+#+begin_exercise :type cloze-drag
+#+instruction: fill blank with correct characters (words)
+- {{{rb(我想买一张,Wǒ xiǎng mǎi yī zhāng)}}}[[手机]]{{{rb(卡。,kǎ.)}}}
+- {{{rb(我听不,Wǒ tīng bù)}}}[[懂]]{{{rb(，可以再说一遍吗？,\, kěyǐ zài shuō yī biàn ma?)}}}[[慢]]{{{rb(一点。,yìdiǎn.)}}}
+- {{{rb(可以用,Kěyǐ yòng)}}}[[支付宝]]{{{rb(吗？,ma?)}}}
+#+end_exercise
+
+** Test exercise runner section
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: exercises
+:END:
+
+#+begin_exercise :type cloze-drag
+- 我想买一张[[手机]]卡。
+- 我听不[[懂]]，可以再说一遍吗？[[慢]]一点。
+- 可以用[[支付宝]]吗？
+#+end_exercise
+
+#+begin_exercise :type multiple-choice
+#+instruction: Select the correct translation for "House".
+- Casa
+- Perro
+- Gato
+:ANSWERS:
+0
+:END:
+#+end_exercise
+
+#+begin_exercise :type pairs
+| House | Casa  |
+| Dog   | Perro |
+| Cat   | Gato  |
+#+end_exercise
+
+* Chapter 2: Exercises without instructions and hints
+:PROPERTIES:
+:CUSTOM_ID: lesson-2
+:END:
+
+** Text section with exercises
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+Sentence Builder Exercise
+
+#+begin_exercise :type sentence-builder
+cats black like I
+
+wear
+:ANSWERS:
+ - I like black cats
+:END:
+#+end_exercise
+
+- Multiple Choice Exercise
+
+#+begin_exercise :type multiple-choice
+- Casa
+- Perro
+- Gato
+:ANSWERS:
+0
+:END:
+#+end_exercise
+
+- Pairs Exercise
+
+#+begin_exercise :type pairs
+| House | Casa  |
+| Dog   | Perro |
+| Cat   | Gato  |
+#+end_exercise
+
+- Sentence Order Exercise
+
+#+begin_exercise :type sentence-order
+1. I woke up at 7 AM.
+2. I brushed my teeth and had breakfast.
+3. I left the house for work.
+#+end_exercise
+
+- Cloze Multi Exercise
+
+#+begin_exercise :type cloze-multi
+The capital of France is {|city} and its currency is {}.
+:ANSWERS:
+ - Paris
+ - Euro
+:END:
+#+end_exercise
+
+- fill blank
+
+#+begin_exercise :type cloze-multi
+我 {|like to eat} 苹果。
+:ANSWERS:
+ - 喜欢吃
+:END:
+#+end_exercise
+
+- word-placement
+
+#+begin_exercise :type word-placement
+#+instruction: Put the words in the right place.
+- 她 ^ 跑 ^{1} 很快，我 ^ 喜欢 她 ^{2} 速度。
+  :WORDS:
+  得 的
+  :END:
+- I like ^{1} cats ^{2} dogs
+  :WORDS:
+  black and
+  :END:
+#+end_exercise
+
+- word-reorder
+
+#+begin_exercise :type word-reorder
+#+instruction: Put the words in the right order.
+- I like birds, cats and dogs.
+  :ANSWERS:
+  - I like birds, cats and dogs.
+  - I like dogs, cats and birds.
+  - I like cats, dogs and birds.
+  :END:
+- I like tea.
+#+end_exercise
+
+** Test exercise runner section
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: exercises
+:END:
+
+#+begin_exercise :type sentence-order
+1. I woke up at 7 AM.
+2. I brushed my teeth and had breakfast.
+3. I left the house for work.
+#+end_exercise
+
+#+begin_exercise :type sentence-builder
+#+instruction: Arrange the words to form a correct sentence.
+#+hint: Start with the pronoun
+cats I dogs like and black
+
+eat
+:ANSWERS:
+ - I like black cats and dogs
+:END:
+#+end_exercise
+
+#+begin_exercise :type sentence-order
+#+instruction: Reorder sentences to form a logical story.
+#+hint: some hint
+1. one
+2. two
+3. three
+#+end_exercise

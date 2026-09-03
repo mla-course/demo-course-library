@@ -1,0 +1,13 @@
+# Workers configuration for demo-course-library
+name = "demo-course-library"
+main = "src/index.js"
+compatibility_date = "2026-09-03"
+
+[assets]
+directory = "./public"
+run_worker_first = true
+binding = "ASSETS"
+
+[observability.logs]
+enabled = true
+invocation_logs = true

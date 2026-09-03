@@ -1,0 +1,28 @@
+{:updated-at "2026-10-12T15:29:27.022401118Z",
+ :type :base,
+ :content-revision 2,
+ :title "Introduction to Logic (demo test course)",
+ :summary "A gentle first course",
+ :created-by "org-course-to-edn",
+ :id #uuid "c0fff48c-59b7-430b-a8cc-97d4f50bd033",
+ :lessons
+ [{:custom-id "lesson-1",
+   :id #uuid "f9a32568-f86c-46c7-a8d5-7f52fd4f13a3",
+   :title ["Lesson 1"],
+   :sections
+   [{:key :text,
+     :content
+     [[:p
+       "Propositional logic studies how simple statements combine into compound ones using connectives such as AND, OR, and NOT."]],
+     :title ["Section"]}]}
+  {:custom-id "lesson-2",
+   :id #uuid "ae61bff8-7d2d-4faf-85bd-88947b8e7371",
+   :title ["Lesson 2"],
+   :sections
+   [{:key :text,
+     :content
+     [[:p
+       "Truth tables let us verify whether an argument is valid by checking every combination of truth values for its premises."]],
+     :title ["Section"]}]}],
+ :version 0,
+ :created-at "2026-10-12T15:09:13.789797502Z"}

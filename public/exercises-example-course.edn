@@ -1,0 +1,284 @@
+{:updated-at "2026-10-12T22:06:55.704946326Z",
+ :license "MIT",
+ :type :base,
+ :content-revision 3,
+ :title "Exercises Collection - Special Blocks",
+ :created-by "org-course-to-edn",
+ :id #uuid "4c94dfd4-14a4-43bf-90ba-e4e3c1040f10",
+ :lessons
+ [{:custom-id "lesson-1",
+   :id #uuid "13362b2b-42c5-40c8-bdfd-a16710df4340",
+   :title ["Chapter 1: Exercises with instructions and hints"],
+   :sections
+   [{:key :text,
+     :content
+     [[:p "Sentence Builder Exercise"]
+      {:instruction ["Arrange the words to form a correct sentence."],
+       :hint ["Start with the pronoun"],
+       :type :sentence-builder,
+       :id #uuid "148e6e0f-6995-4d61-8c3d-decee68f532e",
+       :words ["cats" "black" "like" "I"],
+       :answers [["I" "like" "black" "cats"]]}
+      [:ul [:li "Multiple Choice Exercise"]]
+      {:instruction ["Select the correct translation for \"House\"."],
+       :type :multiple-choice,
+       :id #uuid "338400aa-4191-47f0-bcda-b490072394de",
+       :options
+       [{:content ["Casa"], :correct true}
+        {:content ["Perro"], :correct false}
+        {:content ["Gato"], :correct false}]}
+      [:ul [:li "Pairs Exercise"]]
+      {:type :pairs,
+       :id #uuid "dde8d124-ff3d-4733-85c6-41c4008d678d",
+       :pairs
+       [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}
+      {:type :pairs,
+       :id #uuid "c231f44b-b8dc-4932-8b75-82d97cbbd691",
+       :pairs
+       [[[[:img {:src "./assets/rice.jpg", :alt "cooked rice"}]]
+         [[:ruby
+           [:span "一碗米饭"]
+           [:rp " ("]
+           [:rt "yī wǎn mǐfàn"]
+           [:rp ")"]]]]
+        [[[:img {:src "./flower-tea.jpg", :alt "flower tea"}]]
+         [[:ruby
+           [:span "一壶花茶"]
+           [:rp " ("]
+           [:rt "yī hú huāchá"]
+           [:rp ")"]]]]
+        [[[:img {:src "./scrambled-eggs.jpg", :alt "scrambled eggs"}]]
+         [[:ruby
+           [:span "一盘西红柿炒鸡蛋"]
+           [:rp " ("]
+           [:rt "yī pán xīhóngshì chǎo jīdàn"]
+           [:rp ")"]]]]
+        [[[:img {:src "./assets/roast-duck.jpg", :alt "roast duck"}]]
+         [[:ruby
+           [:span "一只烤鸭"]
+           [:rp " ("]
+           [:rt "yī zhī kǎo yā"]
+           [:rp ")"]]]]]}
+      [:ul [:li "Sentence Order Exercise"]]
+      {:instruction ["Reorder sentences to form a logical story."],
+       :hint ["Chronological order"],
+       :type :sentence-order,
+       :id #uuid "d0a2130d-4ab9-486b-b399-0346bfb19e33",
+       :sentences
+       [["I woke up at 7 AM."]
+        ["I brushed my teeth and had breakfast."]
+        ["I left the house for work."]]}
+      [:ul [:li "Cloze Multi Exercise"]]
+      {:hint ["Geography and currency"],
+       :type :cloze-multi,
+       :id #uuid "841d5269-0ab7-4e4d-a684-97797f875bad",
+       :segments
+       [{:kind :text, :value "The capital of France is "}
+        {:kind :blank, :answer "Paris", :placeholder "city"}
+        {:kind :text, :value " and its currency is "}
+        {:kind :blank, :answer "Euro"}
+        {:kind :text, :value "."}]}
+      [:ul [:li "cloze drag"]]
+      {:instruction ["fill blank with correct characters (words)"],
+       :type :cloze-drag,
+       :id #uuid "0b974095-ccc8-40fa-af79-67594b9b219a",
+       :sentences
+       [[{:kind :text, :value "我想买一张"}
+         {:kind :blank, :answer "手机"}
+         {:kind :text, :value "卡。"}]
+        [{:kind :text, :value "我听不"}
+         {:kind :blank, :answer "懂"}
+         {:kind :text, :value "，可以再说一遍吗？"}
+         {:kind :blank, :answer "慢"}
+         {:kind :text, :value "一点。"}]
+        [{:kind :text, :value "可以用"}
+         {:kind :blank, :answer "支付宝"}
+         {:kind :text, :value "吗？"}]]}
+      {:instruction ["fill blank with correct characters (words)"],
+       :type :cloze-drag,
+       :id #uuid "4cbbe585-44d4-4617-a290-93bfd4746db3",
+       :sentences
+       [[{:kind :text,
+          :value
+          [:ruby
+           [:span "我想买一张"]
+           [:rp " ("]
+           [:rt "Wǒ xiǎng mǎi yī zhāng"]
+           [:rp ")"]]}
+         {:kind :blank, :answer "手机"}
+         {:kind :text,
+          :value
+          [:ruby [:span "卡。"] [:rp " ("] [:rt "kǎ."] [:rp ")"]]}]
+        [{:kind :text,
+          :value
+          [:ruby
+           [:span "我听不"]
+           [:rp " ("]
+           [:rt "Wǒ tīng bù"]
+           [:rp ")"]]}
+         {:kind :blank, :answer "懂"}
+         {:kind :text,
+          :value
+          [:ruby
+           [:span "，可以再说一遍吗？"]
+           [:rp " ("]
+           [:rt ", kěyǐ zài shuō yī biàn ma?"]
+           [:rp ")"]]}
+         {:kind :blank, :answer "慢"}
+         {:kind :text,
+          :value
+          [:ruby [:span "一点。"] [:rp " ("] [:rt "yìdiǎn."] [:rp ")"]]}]
+        [{:kind :text,
+          :value
+          [:ruby [:span "可以用"] [:rp " ("] [:rt "Kěyǐ yòng"] [:rp ")"]]}
+         {:kind :blank, :answer "支付宝"}
+         {:kind :text,
+          :value
+          [:ruby [:span "吗？"] [:rp " ("] [:rt "ma?"] [:rp ")"]]}]]}],
+     :title ["Text section with exercises"]}
+    {:key :exercises,
+     :content
+     [{:type :cloze-drag,
+       :id #uuid "c13da703-c77c-46e5-9660-fff8214f4dc8",
+       :sentences
+       [[{:kind :text, :value "我想买一张"}
+         {:kind :blank, :answer "手机"}
+         {:kind :text, :value "卡。"}]
+        [{:kind :text, :value "我听不"}
+         {:kind :blank, :answer "懂"}
+         {:kind :text, :value "，可以再说一遍吗？"}
+         {:kind :blank, :answer "慢"}
+         {:kind :text, :value "一点。"}]
+        [{:kind :text, :value "可以用"}
+         {:kind :blank, :answer "支付宝"}
+         {:kind :text, :value "吗？"}]]}
+      {:instruction ["Select the correct translation for \"House\"."],
+       :type :multiple-choice,
+       :id #uuid "1640e586-7fd3-4231-8878-59d415722404",
+       :options
+       [{:content ["Casa"], :correct true}
+        {:content ["Perro"], :correct false}
+        {:content ["Gato"], :correct false}]}
+      {:type :pairs,
+       :id #uuid "de87c003-f2d7-4886-a169-e123cb02bc3f",
+       :pairs
+       [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}],
+     :title ["Test exercise runner section"]}]}
+  {:custom-id "lesson-2",
+   :id #uuid "e4333fca-6471-4bb6-a3a1-fad73206f355",
+   :title ["Chapter 2: Exercises without instructions and hints"],
+   :sections
+   [{:key :text,
+     :content
+     [[:p "Sentence Builder Exercise"]
+      {:type :sentence-builder,
+       :id #uuid "87eaf178-2001-4460-bfcb-139ec07405c9",
+       :words ["cats" "black" "like" "I"],
+       :answers [["I" "like" "black" "cats"]],
+       :extra-words ["wear"]}
+      [:ul [:li "Multiple Choice Exercise"]]
+      {:type :multiple-choice,
+       :id #uuid "45f86f56-6afe-403d-b8f0-0c993de8d68b",
+       :options
+       [{:content ["Casa"], :correct true}
+        {:content ["Perro"], :correct false}
+        {:content ["Gato"], :correct false}]}
+      [:ul [:li "Pairs Exercise"]]
+      {:type :pairs,
+       :id #uuid "af8a12ce-872e-4eb0-8615-f81b66b91594",
+       :pairs
+       [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}
+      [:ul [:li "Sentence Order Exercise"]]
+      {:type :sentence-order,
+       :id #uuid "f19b68f0-eefb-40b9-a428-e40fb30010eb",
+       :sentences
+       [["I woke up at 7 AM."]
+        ["I brushed my teeth and had breakfast."]
+        ["I left the house for work."]]}
+      [:ul [:li "Cloze Multi Exercise"]]
+      {:type :cloze-multi,
+       :id #uuid "200e7e01-3528-47fc-b0ce-a8408932ccb5",
+       :segments
+       [{:kind :text, :value "The capital of France is "}
+        {:kind :blank, :answer "Paris", :placeholder "city"}
+        {:kind :text, :value " and its currency is "}
+        {:kind :blank, :answer "Euro"}
+        {:kind :text, :value "."}]}
+      [:ul [:li "fill blank"]]
+      {:type :cloze-multi,
+       :id #uuid "3dfc8f96-a1ed-47ad-be3a-398c21dab9f8",
+       :segments
+       [{:kind :text, :value "我 "}
+        {:kind :blank, :answer "喜欢吃", :placeholder "like to eat"}
+        {:kind :text, :value " 苹果。"}]}
+      [:ul [:li "word-placement"]]
+      {:instruction ["Put the words in the right place."],
+       :type :word-placement,
+       :id #uuid "dc9fcbb0-eb2c-486a-8171-ffb4689c742d",
+       :sentences
+       [{:segments
+         [{:kind :text, :value "她 "}
+          {:kind :gap}
+          {:kind :text, :value " 跑 "}
+          {:kind :gap, :answer-index 1}
+          {:kind :text, :value " 很快，我 "}
+          {:kind :gap}
+          {:kind :text, :value " 喜欢 她 "}
+          {:kind :gap, :answer-index 2}
+          {:kind :text, :value " 速度。"}],
+         :words ["得" "的"]}
+        {:segments
+         [{:kind :text, :value "I like "}
+          {:kind :gap, :answer-index 1}
+          {:kind :text, :value " cats "}
+          {:kind :gap, :answer-index 2}
+          {:kind :text, :value " dogs"}],
+         :words ["black" "and"]}]}
+      [:ul [:li "word-reorder"]]
+      {:instruction ["Put the words in the right order."],
+       :type :word-reorder,
+       :id #uuid "48ce84fa-f34c-4aaa-8b8d-151dbae08f51",
+       :sentences
+       [{:segments
+         [{:kind :word, :value "I"}
+          {:kind :word, :value "like"}
+          {:kind :word, :value "birds"}
+          {:kind :punctuation, :value ","}
+          {:kind :word, :value "cats"}
+          {:kind :word, :value "and"}
+          {:kind :word, :value "dogs"}
+          {:kind :punctuation, :value "."}],
+         :answers
+         [["I" "like" "birds" "," "cats" "and" "dogs" "."]
+          ["I" "like" "dogs" "," "cats" "and" "birds" "."]
+          ["I" "like" "cats" "," "dogs" "and" "birds" "."]]}
+        {:segments
+         [{:kind :word, :value "I"}
+          {:kind :word, :value "like"}
+          {:kind :word, :value "tea"}
+          {:kind :punctuation, :value "."}],
+         :answers [["I" "like" "tea" "."]]}]}],
+     :title ["Text section with exercises"]}
+    {:key :exercises,
+     :content
+     [{:type :sentence-order,
+       :id #uuid "21fcc129-aec1-4913-be97-089830eed3bd",
+       :sentences
+       [["I woke up at 7 AM."]
+        ["I brushed my teeth and had breakfast."]
+        ["I left the house for work."]]}
+      {:instruction ["Arrange the words to form a correct sentence."],
+       :hint ["Start with the pronoun"],
+       :type :sentence-builder,
+       :id #uuid "ab6b82f3-dd86-4788-9232-17eba589d328",
+       :words ["cats" "I" "dogs" "like" "and" "black"],
+       :answers [["I" "like" "black" "cats" "and" "dogs"]],
+       :extra-words ["eat"]}
+      {:instruction ["Reorder sentences to form a logical story."],
+       :hint ["some hint"],
+       :type :sentence-order,
+       :id #uuid "68713379-5a32-4c4a-8272-beaf5ff8cfdf",
+       :sentences [["one"] ["two"] ["three"]]}],
+     :title ["Test exercise runner section"]}]}],
+ :version 0,
+ :created-at "2026-10-12T15:12:33.707201694Z"}

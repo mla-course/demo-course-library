@@ -1,0 +1,46 @@
+{:updated-at "2026-10-12T15:28:56.008232305Z",
+ :type :language,
+ :content-revision 3,
+ :source-lang :en,
+ :target-lang :es,
+ :title "Spanish for Beginners (demo test course)",
+ :summary "Term 1",
+ :created-by "org-course-to-edn",
+ :id #uuid "0350eb68-aa7a-4acb-9bc3-fbb853018363",
+ :lessons
+ [{:custom-id "lesson-1",
+   :id #uuid "7368ae17-8d2a-4289-87da-574b4b3038ab",
+   :title ["Lesson 1"],
+   :content
+   [[:section
+     {:data-level 2}
+     [:h2 "Notes"]
+     [:p
+      "Spanish greetings vary by time of day and formality; \"hola\" is appropriate in almost any register."]]],
+   :sections
+   [{:key :vocabulary,
+     :type :standard,
+     :content
+     [{:lexeme "hola",
+       :senses
+       [{:definition "hello", :parts-of-speech [:interjection]}]}
+      {:lexeme "adiós",
+       :senses
+       [{:definition "goodbye", :parts-of-speech [:interjection]}]}
+      {:lexeme "gato",
+       :senses [{:definition "cat", :parts-of-speech [:noun]}]}],
+     :title ["Vocabulary"]}]}
+  {:custom-id "lesson-2",
+   :id #uuid "8d1b043c-9e96-4ac4-8c47-fd1ec5116559",
+   :title ["Lesson 2"],
+   :sections
+   [{:key :vocabulary,
+     :type :standard,
+     :content
+     [{:lexeme "comer",
+       :senses [{:definition "to eat", :parts-of-speech [:verb]}]}
+      {:lexeme "beber",
+       :senses [{:definition "to drink", :parts-of-speech [:verb]}]}],
+     :title ["Vocabulary"]}]}],
+ :version 0,
+ :created-at "2026-10-12T15:23:23.525340252Z"}

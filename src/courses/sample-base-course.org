@@ -1,0 +1,31 @@
+#+TITLE: Introduction to Logic (demo test course)
+#+SUBTITLE: A gentle first course
+:PROPERTIES:
+:COURSE_TYPE: base
+:END:
+
+* Lesson 1
+:PROPERTIES:
+:CUSTOM_ID: lesson-1
+:END:
+
+** Section
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+Propositional logic studies how simple statements combine into
+compound ones using connectives such as AND, OR, and NOT.
+
+* Lesson 2
+:PROPERTIES:
+:CUSTOM_ID: lesson-2
+:END:
+
+** Section
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+Truth tables let us verify whether an argument is valid by checking
+every combination of truth values for its premises.

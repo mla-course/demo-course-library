@@ -1,0 +1,224 @@
+#+TITLE: Japanese for Beginners (demo test course)
+#+SUBTITLE: Greetings and everyday words
+#+AUTHOR: MLA Course Team
+:PROPERTIES:
+:COURSE_TYPE: language
+:COURSE_SOURCE_LANG: en
+:COURSE_TARGET_LANG: ja
+:COURSE_HANYU2_LANGUAGES: '((ja . (ja ja-Latn)) en)
+:COURSE_RUBY: ja ja-Latn en
+:COURSE_LICENSE: [[https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en][BY-NC-ND]]
+:END:
+
+* Lesson 1: First Steps in Japanese
+:PROPERTIES:
+:CUSTOM_ID: lesson-1
+:END:
+
+** Vocabulary
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: vocabulary
+:END:
+
+*** こんにちは
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: hello
+:POS: interjection
+:END:
+
+*** おはよう
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: good morning
+:POS: interjection
+:END:
+
+*** ありがとう
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: thank you
+:POS: interjection
+:END:
+
+*** すみません
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: excuse me, sorry
+:POS: interjection
+:END:
+
+*** はい
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: yes
+:POS: particle
+:END:
+
+*** いいえ
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: no
+:POS: interjection
+:END:
+
+*** 名前
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: name
+:POS: noun
+:END:
+
+*** 学生
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: student
+:POS: noun
+:END:
+
+*** 先生
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: teacher
+:POS: noun
+:END:
+
+*** 教室
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: classroom
+:POS: noun
+:END:
+
+*** 水
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: water
+:POS: noun
+:END:
+
+*** 食べる
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: lexeme
+:SENSE: to eat
+:POS: verb
+:END:
+
+
+** {{{rb(初めての挨拶,Hajimete no aisatsu,First Greetings)}}}
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+A short dialogue to practice greetings, with pronunciation and
+translation shown as ruby annotations.
+
+Notice that Japanese greetings change with the time of day — {{{rb(おはよう,ohayou,good morning)}}}
+in the morning, {{{rb(こんにちは,konnichiwa,hello)}}} for the rest of the day.
+
+#+begin_src hanyu2
+*Tanaka: おはようございます。お名前は何ですか。
+*Tanaka: Ohayou gozaimasu. Onamae wa nan desu ka.
+*Tanaka: Good morning. What is your name?
+
+*Anna: 私の名前はアンナです。よろしくお願いします。
+*Anna: Watashi no namae wa Anna desu. Yoroshiku onegaishimasu.
+*Anna: My name is Anna. Nice to meet you.
+
+*Tanaka: はじめまして、アンナさん。
+*Tanaka: Hajimemashite, Anna-san.
+*Tanaka: Nice to meet you, Anna.
+#+end_src
+
+The word {{{rb(すみません,sumimasen,excuse me / sorry)}}} is one of
+the most useful phrases in Japanese — it works both as an apology and
+as a polite way to get someone's
+attention. {{{rb(ありがとう,arigatou,thank you)}}}
+and {{{rb(すみません,sumimasen,excuse me / sorry)}}} will come up in
+almost every conversation you have.
+
+#+begin_exercise :type pairs
+#+instruction: Match each Japanese word with its English meaning.
+| こんにちは | hello |
+| おはよう | good morning |
+| ありがとう | thank you |
+| すみません | excuse me / sorry |
+| はい | yes |
+| いいえ | no |
+#+end_exercise
+
+#+begin_exercise :type multiple-choice
+#+instruction: How do you say "thank you" in Japanese?
+#+hint: It is one of the first words most learners memorize.
+- こんにちは
+- ありがとう
+- すみません
+- いいえ
+:ANSWERS:
+1
+:END:
+#+end_exercise
+
+#+begin_exercise :type word-placement
+#+instruction: Complete Anna's introduction with the missing words.
+- 私の名前は ^{1} です。よろしく ^{2} します。
+  :WORDS:
+  アンナ お願い
+  :END:
+#+end_exercise
+
+
+** {{{rb(教室にて,Kyoushitsu nite,In the Classroom)}}}
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+A second dialogue introduces the classroom vocabulary from this lesson: {{{rb(教室,kyoushitsu,classroom)}}}, {{{rb(学生,gakusei,student)}}}, {{{rb(先生,sensei,teacher)}}}, and {{{rb(水,mizu,water)}}}.
+
+#+begin_src hanyu2
+*Sensei: 皆さん、こんにちは。ここは教室です。私は先生です。
+*Sensei: Minasan, konnichiwa. Koko wa kyoushitsu desu. Watashi wa sensei desu.
+*Sensei: Everyone, hello. This is the classroom. I am the teacher.
+
+*Anna: こんにちは、先生。私は学生です。
+*Anna: Konnichiwa, sensei. Watashi wa gakusei desu.
+*Anna: Hello, teacher. I am a student.
+
+*Sensei: すみません、水を飲んでもいいですか。
+*Sensei: Sumimasen, mizu o nondemo ii desu ka.
+*Sensei: Excuse me, may I drink some water?
+
+*Anna: はい、どうぞ。
+*Anna: Hai, douzo.
+*Anna: Yes, please go ahead.
+#+end_src
+
+Notice how {{{rb(食べる,taberu,to eat)}}} and other verbs will appear in later lessons once you are comfortable with these basic greetings and classroom words.
+
+#+begin_exercise :type sentence-builder
+#+instruction: Unscramble the words to build a correct sentence.
+#+hint: This means "I am a student."
+です 学生 は 私
+:ANSWERS:
+ - 私 は 学生 です
+:END:
+#+end_exercise
+
+#+begin_exercise :type word-placement
+#+instruction: Fill in the blank in the teacher's question.
+- すみません、 ^{1} を飲んでもいいですか。
+  :WORDS:
+  水
+  :END:
+#+end_exercise
+
+#+begin_exercise :type multiple-choice
+#+instruction: Which word means "teacher"?
+- 学生
+- 教室
+- 先生
+- 水
+:ANSWERS:
+2
+:END:
+#+end_exercise
