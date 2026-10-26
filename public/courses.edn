@@ -1,13 +1,16 @@
 {:title "Demo Courses for Demonstration and testing",
- :updated-at "2026-10-12T15:30:14Z",
+ :updated-at "2026-10-26T17:28:30Z",
  :created-at "2026-10-12T15:10:34Z",
  :courses
- [{:id #uuid "4c94dfd4-14a4-43bf-90ba-e4e3c1040f10",
+ [{:id #uuid "49019c96-491f-40b9-a58d-a68b94929786",
    :type :base,
-   :title "Exercises Collection - Special Blocks (demo test course)",
+   :title "Exercises Collection - Special Blocks",
    :version 0,
-   :content-revision 2,
-   :updated-at "2026-10-12T15:29:37.519982201Z",
+   :content-revision 3,
+   :updated-at "2026-10-26T16:29:05.225775561Z",
+   :license
+   {:url "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    :name "CC BY-NC-ND 4.0"},
    :filename "exercises-example-course.edn"}
   {:id #uuid "c0fff48c-59b7-430b-a8cc-97d4f50bd033",
    :type :base,
@@ -17,12 +20,12 @@
    :content-revision 2,
    :updated-at "2026-10-12T15:29:27.022401118Z",
    :filename "sample-base-course.edn"}
-  {:updated-at "2026-10-12T15:29:11.932992941Z",
+  {:updated-at "2026-10-26T16:30:26.442637637Z",
    :license
    {:url "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en",
     :name "BY-NC-ND"},
    :type :language,
-   :content-revision 3,
+   :content-revision 4,
    :source-lang :en,
    :target-lang :ja,
    :title "Japanese for Beginners (demo test course)",

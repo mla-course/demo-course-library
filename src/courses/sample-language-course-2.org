@@ -25,6 +25,7 @@
 :HTML_CONTAINER_CLASS: lexeme
 :SENSE: hello
 :POS: interjection
+:ASSET_ID: ee8aff98-23b1-4424-9b99-a0f209dea9a8
 :END:
 
 *** おはよう
@@ -222,3 +223,23 @@ Notice how {{{rb(食べる,taberu,to eat)}}} and other verbs will appear in late
 2
 :END:
 #+end_exercise
+* Assets
+:PROPERTIES:
+:CUSTOM_ID: assets
+:END:
+** https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/250px-Salve%21.JPG :asset:
+:PROPERTIES:
+:ID: ee8aff98-23b1-4424-9b99-a0f209dea9a8
+:HTML_CONTAINER_CLASS: asset
+:ASSET_TYPE: image
+:ALT_TEXT: Un saluto lungo una via di campagna, nel Cilento
+:SOURCE: [[https://commons.wikimedia.org/wiki/File:Salve!.JPG][Wikimedia]]
+:CREDIT: [[https://commons.wikimedia.org/wiki/User:Spinoziano][Spinoziano]]
+:LICENSE: [[https://creativecommons.org/licenses/by-sa/3.0][CC BY-SA 3.0]]
+:SMALL_URL: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/250px-Salve%21.JPG
+:SMALL_DIMENSIONS: [250, 207]
+:MEDIUM_URL: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/330px-Salve%21.JPG
+:MEDIUM_DIMENSIONS: [330, 273]
+:LARGE_URL: _
+:LARGE_DIMENSIONS: _
+:END:

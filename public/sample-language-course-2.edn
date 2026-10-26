@@ -1,10 +1,38 @@
-{:updated-at "2026-10-12T15:29:11.932992941Z",
+{:updated-at "2026-10-26T16:30:26.442637637Z",
  :hanyu2-languages [{:ja [:ja :ja-Latn]} :en],
  :license
  {:url "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en",
   :name "BY-NC-ND"},
+ :assets
+ [{:asset-type :image,
+   :url
+   "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/250px-Salve%21.JPG",
+   :licensing
+   {:license
+    {:url "https://creativecommons.org/licenses/by-sa/3.0",
+     :name "CC BY-SA 3.0"},
+    :credit
+    {:url "https://commons.wikimedia.org/wiki/User:Spinoziano",
+     :name "Spinoziano"}},
+   :id #uuid "ee8aff98-23b1-4424-9b99-a0f209dea9a8",
+   :source
+   {:url "https://commons.wikimedia.org/wiki/File:Salve!.JPG",
+    :name "Wikimedia"},
+   :accessibility
+   {:alt-text "Un saluto lungo una via di campagna, nel Cilento"},
+   :variants
+   [{:url
+     "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/250px-Salve%21.JPG",
+     :quality "small",
+     :width 250,
+     :height 207}
+    {:url
+     "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Salve%21.JPG/330px-Salve%21.JPG",
+     :quality "medium",
+     :width 330,
+     :height 273}]}],
  :type :language,
- :content-revision 3,
+ :content-revision 4,
  :source-lang :en,
  :target-lang :ja,
  :title "Japanese for Beginners (demo test course)",
@@ -22,7 +50,8 @@
      :content
      [{:lexeme "こんにちは",
        :senses
-       [{:definition "hello", :parts-of-speech [:interjection]}]}
+       [{:definition "hello", :parts-of-speech [:interjection]}],
+       :asset-ids [#uuid "ee8aff98-23b1-4424-9b99-a0f209dea9a8"]}
       {:lexeme "おはよう",
        :senses
        [{:definition "good morning",
@@ -79,138 +108,116 @@
         {:class "lang-block"}
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Tanaka"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Tanaka"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Tanaka"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Tanaka"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "おはようございます。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Ohayou gozaimasu. "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "お名前は何ですか。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Onamae wa nan desu ka."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Tanaka"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Tanaka"]
-           [:span {:class "separator"} ": "]
+           {:class "separator"}
            [:span
-            {:class "speech"}
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja"}
+             "おはようございます。お名前は何ですか。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Ohayou gozaimasu. Onamae wa nan desu ka."]]
+           [:span
+            {:class "lang-en", :lang "en"}
             "Good morning. What is your name?"]]]]
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Anna"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Anna"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Anna"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Anna"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "私の名前はアンナです。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Watashi no namae wa Anna desu. "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "よろしくお願いします。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Yoroshiku onegaishimasu."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Anna"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Anna"]
-           [:span {:class "separator"} ": "]
+           {:class "separator"}
            [:span
-            {:class "speech"}
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja"}
+             "私の名前はアンナです。よろしくお願いします。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Watashi no namae wa Anna desu. Yoroshiku onegaishimasu."]]
+           [:span
+            {:class "lang-en", :lang "en"}
             "My name is Anna. Nice to meet you."]]]]
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Tanaka"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Tanaka"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Tanaka"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Tanaka"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "はじめまして、"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Hajimemashite, "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "アンナさん。"]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} "Anna-san."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Tanaka"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Tanaka"]
-           [:span {:class "separator"} ": "]
-           [:span {:class "speech"} "Nice to meet you, Anna."]]]]]]
+           {:class "separator"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} "はじめまして、アンナさん。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Hajimemashite, Anna-san."]]
+           [:span
+            {:class "lang-en", :lang "en"}
+            "Nice to meet you, Anna."]]]]]]
       [:p
        "The word "
        [:ruby
@@ -240,7 +247,7 @@
       {:instruction
        ["Match each Japanese word with its English meaning."],
        :type :pairs,
-       :id #uuid "170fe505-f89f-483d-994a-e19c508ec687",
+       :id #uuid "3caec4aa-8d0a-403d-abe9-0252300fc36d",
        :pairs
        [[["こんにちは"] ["hello"]]
         [["おはよう"] ["good morning"]]
@@ -251,7 +258,7 @@
       {:instruction ["How do you say \"thank you\" in Japanese?"],
        :hint ["It is one of the first words most learners memorize."],
        :type :multiple-choice,
-       :id #uuid "a2929cc5-a657-4a31-b1a5-5838e53b4099",
+       :id #uuid "3ca2f3da-8e46-45c0-afe4-3242372a93b6",
        :options
        [{:content ["こんにちは"], :correct false}
         {:content ["ありがとう"], :correct true}
@@ -260,7 +267,7 @@
       {:instruction
        ["Complete Anna's introduction with the missing words."],
        :type :word-placement,
-       :id #uuid "282f592c-dfb3-43ac-adba-fd01ce69ff61",
+       :id #uuid "54cce176-a1e6-4754-9358-4286706b4e7e",
        :sentences
        [{:segments
          [{:kind :text, :value "私の名前は "}
@@ -321,199 +328,150 @@
         {:class "lang-block"}
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Sensei"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Sensei"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Sensei"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Sensei"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "皆さん、"]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} "Minasan, "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "こんにちは。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "konnichiwa. "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "ここは教室です。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Koko wa kyoushitsu desu. "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "私は先生です。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Watashi wa sensei desu."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Sensei"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Sensei"]
-           [:span {:class "separator"} ": "]
+           {:class "separator"}
            [:span
-            {:class "speech"}
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja"}
+             "皆さん、こんにちは。ここは教室です。私は先生です。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Minasan, konnichiwa. Koko wa kyoushitsu desu. Watashi wa sensei desu."]]
+           [:span
+            {:class "lang-en", :lang "en"}
             "Everyone, hello. This is the classroom. I am the teacher."]]]]
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Anna"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Anna"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Anna"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Anna"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "こんにちは、"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Konnichiwa, "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "先生。"]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} "sensei. "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "私は学生です。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Watashi wa gakusei desu."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Anna"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Anna"]
-           [:span {:class "separator"} ": "]
+           {:class "separator"}
            [:span
-            {:class "speech"}
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} "こんにちは、先生。私は学生です。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Konnichiwa, sensei. Watashi wa gakusei desu."]]
+           [:span
+            {:class "lang-en", :lang "en"}
             "Hello, teacher. I am a student."]]]]
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Sensei"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Sensei"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Sensei"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Sensei"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "すみません、"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "Sumimasen, "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "水を飲んでもいいですか。"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn"}
-              "mizu o nondemo ii desu ka."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Sensei"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Sensei"]
-           [:span {:class "separator"} ": "]
+           {:class "separator"}
            [:span
-            {:class "speech"}
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} "すみません、水を飲んでもいいですか。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Sumimasen, mizu o nondemo ii desu ka."]]
+           [:span
+            {:class "lang-en", :lang "en"}
             "Excuse me, may I drink some water?"]]]]
         [:p
          [:span
-          {:class "utterance"}
+          {:class "speech"}
           [:span
-           {:class "lang-ja", :lang "ja"}
+           {:class "speaker"}
            [:span
-            {:class "speaker"}
-            [:ruby
-             [:span
-              {:lang "ja", :class "lang-ja", :data-mark "*"}
-              "Anna"]
-             [:rp " ("]
-             [:rt
-              {:lang "ja-Latn", :class "lang-ja-Latn", :data-mark "*"}
-              "Anna"]
-             [:rp ")"]]]
+            {:class "lang-ja", :lang "ja"}
+            [:span
+             {:class "lang-ja", :lang "ja", :data-speaker-mark "*"}
+             "Anna"]
+            [:span
+             {:class "lang-ja-Latn",
+              :lang "ja-Latn",
+              :data-speaker-mark "*"}
+             "Anna"]]
            [:span
-            {:class "separator"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} ": "]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} ": "]
-             [:rp ")"]]]
-           [:span
-            {:class "speech"}
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "はい、"]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} "Hai, "]
-             [:rp ")"]]
-            [:ruby
-             [:span {:lang "ja", :class "lang-ja"} "どうぞ。"]
-             [:rp " ("]
-             [:rt {:lang "ja-Latn", :class "lang-ja-Latn"} "douzo."]
-             [:rp ")"]]]]
+            {:class "lang-en", :lang "en", :data-speaker-mark "*"}
+            "Anna"]]
           [:span
-           {:class "lang-en", :lang "en"}
-           [:span {:class "speaker", :data-mark "*"} "Anna"]
-           [:span {:class "separator"} ": "]
-           [:span {:class "speech"} "Yes, please go ahead."]]]]]]
+           {:class "separator"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} ": "]
+            [:span {:class "lang-ja-Latn", :lang "ja-Latn"} ": "]]
+           [:span {:class "lang-en", :lang "en"} ": "]]
+          [:span
+           {:class "utterance"}
+           [:span
+            {:class "lang-ja", :lang "ja"}
+            [:span {:class "lang-ja", :lang "ja"} "はい、どうぞ。"]
+            [:span
+             {:class "lang-ja-Latn", :lang "ja-Latn"}
+             "Hai, douzo."]]
+           [:span
+            {:class "lang-en", :lang "en"}
+            "Yes, please go ahead."]]]]]]
       [:p
        "Notice how "
        [:ruby
@@ -528,12 +486,13 @@
        ["Unscramble the words to build a correct sentence."],
        :hint ["This means \"I am a student.\""],
        :type :sentence-builder,
-       :id #uuid "b07b18c2-2e1b-482d-a597-8e442aee4f19",
-       :words ["です" "学生" "は" "私"],
-       :answers [["私" "は" "学生" "です"]]}
+       :id #uuid "9e47565c-9dd3-4c3b-a568-cb9b6288d9e9",
+       :sentences
+       [{:words ["です" "学生" "は" "私"],
+         :answers [["です" "学生" "は" "私"] ["私" "は" "学生" "です"]]}]}
       {:instruction ["Fill in the blank in the teacher's question."],
        :type :word-placement,
-       :id #uuid "529eabeb-1974-4c0a-ac10-66e0b3c3ba26",
+       :id #uuid "2ce32ac6-8cf2-4be2-89cc-14b44e2aabb6",
        :sentences
        [{:segments
          [{:kind :text, :value "すみません、 "}
@@ -542,7 +501,7 @@
          :words ["水"]}]}
       {:instruction ["Which word means \"teacher\"?"],
        :type :multiple-choice,
-       :id #uuid "715bada8-40b4-483a-ba3f-2589baa9577e",
+       :id #uuid "c53c06da-cd6e-49b3-b704-bc5684801151",
        :options
        [{:content ["学生"], :correct false}
         {:content ["教室"], :correct false}

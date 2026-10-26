@@ -1,243 +1,492 @@
-{:updated-at "2026-10-12T22:06:55.704946326Z",
- :license "MIT",
+{:updated-at "2026-10-26T16:29:05.225775561Z",
+ :license
+ {:url "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  :name "CC BY-NC-ND 4.0"},
  :type :base,
  :content-revision 3,
  :title "Exercises Collection - Special Blocks",
  :created-by "org-course-to-edn",
- :id #uuid "4c94dfd4-14a4-43bf-90ba-e4e3c1040f10",
+ :id #uuid "49019c96-491f-40b9-a58d-a68b94929786",
  :lessons
  [{:custom-id "lesson-1",
-   :id #uuid "13362b2b-42c5-40c8-bdfd-a16710df4340",
+   :id #uuid "4376e3d4-63ff-4786-8c12-2bde53bdf918",
    :title ["Chapter 1: Exercises with instructions and hints"],
    :sections
    [{:key :text,
      :content
-     [[:p "Sentence Builder Exercise"]
-      {:instruction ["Arrange the words to form a correct sentence."],
-       :hint ["Start with the pronoun"],
+     [[:p "Sentence builder"]
+      {:instruction ["Put the words in the right order."],
+       :hint ["think about subject-verb-object order"],
        :type :sentence-builder,
-       :id #uuid "148e6e0f-6995-4d61-8c3d-decee68f532e",
-       :words ["cats" "black" "like" "I"],
-       :answers [["I" "like" "black" "cats"]]}
-      [:ul [:li "Multiple Choice Exercise"]]
+       :id #uuid "c56a4798-f1b3-435d-8b1e-0579204a60fa",
+       :sentences
+       [{:words ["I" "like" "black" "cats" "and" "dogs"],
+         :answers
+         [["I" "like" "black" "cats" "and" "dogs"]
+          ["I" "like" "black" "dogs" "and" "cats"]],
+         :extra-words ["wear" "sleep"],
+         :canonical ["I like black cats and dogs."]}]}
+      [:p "Multiple choice"]
       {:instruction ["Select the correct translation for \"House\"."],
+       :hint ["Think of Spanish"],
        :type :multiple-choice,
-       :id #uuid "338400aa-4191-47f0-bcda-b490072394de",
+       :id #uuid "b62146a8-34d3-4b9b-abb2-903cad775d0e",
        :options
        [{:content ["Casa"], :correct true}
         {:content ["Perro"], :correct false}
         {:content ["Gato"], :correct false}]}
-      [:ul [:li "Pairs Exercise"]]
-      {:type :pairs,
-       :id #uuid "dde8d124-ff3d-4733-85c6-41c4008d678d",
+      [:p "Pairs"]
+      {:instruction ["Match each word to its translation."],
+       :type :pairs,
+       :id #uuid "2eac7765-91e5-4e3e-9b3d-90328fb62ac0",
        :pairs
        [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}
-      {:type :pairs,
-       :id #uuid "c231f44b-b8dc-4932-8b75-82d97cbbd691",
-       :pairs
-       [[[[:img {:src "./assets/rice.jpg", :alt "cooked rice"}]]
-         [[:ruby
-           [:span "一碗米饭"]
-           [:rp " ("]
-           [:rt "yī wǎn mǐfàn"]
-           [:rp ")"]]]]
-        [[[:img {:src "./flower-tea.jpg", :alt "flower tea"}]]
-         [[:ruby
-           [:span "一壶花茶"]
-           [:rp " ("]
-           [:rt "yī hú huāchá"]
-           [:rp ")"]]]]
-        [[[:img {:src "./scrambled-eggs.jpg", :alt "scrambled eggs"}]]
-         [[:ruby
-           [:span "一盘西红柿炒鸡蛋"]
-           [:rp " ("]
-           [:rt "yī pán xīhóngshì chǎo jīdàn"]
-           [:rp ")"]]]]
-        [[[:img {:src "./assets/roast-duck.jpg", :alt "roast duck"}]]
-         [[:ruby
-           [:span "一只烤鸭"]
-           [:rp " ("]
-           [:rt "yī zhī kǎo yā"]
-           [:rp ")"]]]]]}
-      [:ul [:li "Sentence Order Exercise"]]
+      [:p "Sentence order"]
       {:instruction ["Reorder sentences to form a logical story."],
        :hint ["Chronological order"],
        :type :sentence-order,
-       :id #uuid "d0a2130d-4ab9-486b-b399-0346bfb19e33",
+       :id #uuid "1a47ce17-ea09-44e6-8652-b7043850501c",
        :sentences
        [["I woke up at 7 AM."]
         ["I brushed my teeth and had breakfast."]
         ["I left the house for work."]]}
-      [:ul [:li "Cloze Multi Exercise"]]
+      [:p "Cloze multi"]
       {:hint ["Geography and currency"],
        :type :cloze-multi,
-       :id #uuid "841d5269-0ab7-4e4d-a684-97797f875bad",
+       :id #uuid "05f959d2-cf73-44e7-a805-315028419629",
        :segments
        [{:kind :text, :value "The capital of France is "}
         {:kind :blank, :answer "Paris", :placeholder "city"}
         {:kind :text, :value " and its currency is "}
         {:kind :blank, :answer "Euro"}
-        {:kind :text, :value "."}]}
-      [:ul [:li "cloze drag"]]
-      {:instruction ["fill blank with correct characters (words)"],
-       :type :cloze-drag,
-       :id #uuid "0b974095-ccc8-40fa-af79-67594b9b219a",
+        {:kind :text, :value "."}]}],
+     :title ["Plain exercises"]}
+    {:key :text,
+     :content
+     [[:p "Pairs (annotate first column only)"]
+      {:instruction ["Match each word to its translation."],
+       :hint ["Think of a mobile phone plan"],
+       :type :pairs,
+       :id #uuid "8bf86f3c-1254-4a70-8ebb-518c26b7e1ce",
+       :pairs
+       [[[[:span
+           {:class "word", :data-text "手机卡", :data-pinyin "shǒujīkǎ"}
+           [:ruby "手" [:rt "shǒu"]]
+           [:ruby "机" [:rt "jī"]]
+           [:ruby "卡" [:rt "kǎ"]]]]
+         ["SIM card"]]
+        [[[:span
+           {:class "phrase", :data-text "绑定", :data-pinyin "bǎng dìng"}
+           [:span
+            {:class "word", :data-text "绑", :data-pinyin "bǎng"}
+            [:ruby "绑" [:rt "bǎng"]]]
+           [:span
+            {:class "word", :data-text "定", :data-pinyin "dìng"}
+            [:ruby "定" [:rt "dìng"]]]]]
+         ["to link/ bind"]]
+        [[[:span
+           {:class "word", :data-text "流量", :data-pinyin "liúliàng"}
+           [:ruby "流" [:rt "liú"]]
+           [:ruby "量" [:rt "liàng"]]]]
+         ["mobile data"]]],
+       :annotate [:pinyin nil]}
+      [:p "Pairs with images (annotate second column only)"]
+      {:instruction ["Match each picture to its description."],
+       :type :pairs,
+       :id #uuid "c6c855c6-8a38-4c4c-aa3e-6d9e922e067c",
+       :pairs
+       [[[[:img {:src "./assets/rice.jpg", :alt "cooked rice"}]]
+         [[:span
+           {:class "phrase",
+            :data-text "一碗米饭",
+            :data-pinyin "yī wǎn mǐfàn"}
+           [:span
+            {:class "word", :data-text "一", :data-pinyin "yī"}
+            [:ruby "一" [:rt "yī"]]]
+           [:span
+            {:class "word", :data-text "碗", :data-pinyin "wǎn"}
+            [:ruby "碗" [:rt "wǎn"]]]
+           [:span
+            {:class "word", :data-text "米饭", :data-pinyin "mǐfàn"}
+            [:ruby "米" [:rt "mǐ"]]
+            [:ruby "饭" [:rt "fàn"]]]]]]
+        [[[:img {:src "./assets/flower-tea.jpg", :alt "flower tea"}]]
+         [[:span
+           {:class "phrase",
+            :data-text "一壶花茶",
+            :data-pinyin "yī hú huāchá"}
+           [:span
+            {:class "word", :data-text "一", :data-pinyin "yī"}
+            [:ruby "一" [:rt "yī"]]]
+           [:span
+            {:class "word", :data-text "壶", :data-pinyin "hú"}
+            [:ruby "壶" [:rt "hú"]]]
+           [:span
+            {:class "word", :data-text "花茶", :data-pinyin "huāchá"}
+            [:ruby "花" [:rt "huā"]]
+            [:ruby "茶" [:rt "chá"]]]]]]
+        [[[:img
+           {:src "./assets/scrambled-eggs.jpg",
+            :alt "scrambled eggs"}]]
+         [[:span
+           {:class "phrase",
+            :data-text "一盘西红柿炒鸡蛋",
+            :data-pinyin "yī pán xīhóngshì chǎojīdàn"}
+           [:span
+            {:class "word", :data-text "一", :data-pinyin "yī"}
+            [:ruby "一" [:rt "yī"]]]
+           [:span
+            {:class "word", :data-text "盘", :data-pinyin "pán"}
+            [:ruby "盘" [:rt "pán"]]]
+           [:span
+            {:class "word", :data-text "西红柿", :data-pinyin "xīhóngshì"}
+            [:ruby "西" [:rt "xī"]]
+            [:ruby "红" [:rt "hóng"]]
+            [:ruby "柿" [:rt "shì"]]]
+           [:span
+            {:class "word", :data-text "炒鸡蛋", :data-pinyin "chǎojīdàn"}
+            [:ruby "炒" [:rt "chǎo"]]
+            [:ruby "鸡" [:rt "jī"]]
+            [:ruby "蛋" [:rt "dàn"]]]]]]
+        [[[:img {:src "./assets/roast-duck.jpg", :alt "roast duck"}]]
+         [[:span
+           {:class "phrase",
+            :data-text "一只烤鸭",
+            :data-pinyin "yī zhǐ kǎoyā"}
+           [:span
+            {:class "word", :data-text "一", :data-pinyin "yī"}
+            [:ruby "一" [:rt "yī"]]]
+           [:span
+            {:class "word", :data-text "只", :data-pinyin "zhǐ"}
+            [:ruby "只" [:rt "zhǐ"]]]
+           [:span
+            {:class "word", :data-text "烤鸭", :data-pinyin "kǎoyā"}
+            [:ruby "烤" [:rt "kǎo"]]
+            [:ruby "鸭" [:rt "yā"]]]]]]],
+       :annotate [nil :pinyin]}
+      [:p "Multiple choice"]
+      {:instruction
+       ["Choose the correct translation for \"mobile data\"."],
+       :hint ["Think of 手机"],
+       :type :multiple-choice,
+       :id #uuid "2fe2a19c-8db8-4471-959b-a8657e54fa26",
+       :options
+       [{:content
+         [[:span
+           {:class "word", :data-text "流量", :data-pinyin "liúliàng"}
+           [:ruby "流" [:rt "liú"]]
+           [:ruby "量" [:rt "liàng"]]]],
+         :correct true}
+        {:content
+         [[:span
+           {:class "phrase", :data-text "绑定", :data-pinyin "bǎng dìng"}
+           [:span
+            {:class "word", :data-text "绑", :data-pinyin "bǎng"}
+            [:ruby "绑" [:rt "bǎng"]]]
+           [:span
+            {:class "word", :data-text "定", :data-pinyin "dìng"}
+            [:ruby "定" [:rt "dìng"]]]]],
+         :correct false}
+        {:content
+         [[:span
+           {:class "word", :data-text "支付宝", :data-pinyin "zhīfùbǎo"}
+           [:ruby "支" [:rt "zhī"]]
+           [:ruby "付" [:rt "fù"]]
+           [:ruby "宝" [:rt "bǎo"]]]],
+         :correct false}],
+       :annotate [:pinyin]}
+      [:p "Sentence order"]
+      {:instruction ["Reorder sentences to form a logical story."],
+       :type :sentence-order,
+       :id #uuid "27eab0c1-7829-4146-b3c4-e1db3cd11136",
        :sentences
-       [[{:kind :text, :value "我想买一张"}
-         {:kind :blank, :answer "手机"}
-         {:kind :text, :value "卡。"}]
-        [{:kind :text, :value "我听不"}
-         {:kind :blank, :answer "懂"}
-         {:kind :text, :value "，可以再说一遍吗？"}
-         {:kind :blank, :answer "慢"}
-         {:kind :text, :value "一点。"}]
-        [{:kind :text, :value "可以用"}
-         {:kind :blank, :answer "支付宝"}
-         {:kind :text, :value "吗？"}]]}
-      {:instruction ["fill blank with correct characters (words)"],
+       [[[:span
+          {:class "sentence",
+           :data-text "我早上七点起床。",
+           :data-pinyin "Wǒ zǎoshàng qī diǎn qǐchuáng."}
+          [:span
+           {:class "phrase",
+            :data-text "我早上七点起床",
+            :data-pinyin "wǒ zǎoshàng qī diǎn qǐchuáng"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "早上", :data-pinyin "zǎoshàng"}
+            [:ruby "早" [:rt "zǎo"]]
+            [:ruby "上" [:rt "shàng"]]]
+           [:span
+            {:class "word", :data-text "七", :data-pinyin "qī"}
+            [:ruby "七" [:rt "qī"]]]
+           [:span
+            {:class "word", :data-text "点", :data-pinyin "diǎn"}
+            [:ruby "点" [:rt "diǎn"]]]
+           [:span
+            {:class "word", :data-text "起床", :data-pinyin "qǐchuáng"}
+            [:ruby "起" [:rt "qǐ"]]
+            [:ruby "床" [:rt "chuáng"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我刷牙，吃早饭。",
+           :data-pinyin "Wǒ shuāyá, chīzǎofàn."}
+          [:span
+           {:class "phrase",
+            :data-text "我刷牙",
+            :data-pinyin "wǒ shuāyá"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "刷牙", :data-pinyin "shuāyá"}
+            [:ruby "刷" [:rt "shuā"]]
+            [:ruby "牙" [:rt "yá"]]]]
+          [:span
+           {:class "punct", :data-text "，", :data-pinyin ", "}
+           "，"]
+          [:span
+           {:class "word", :data-text "吃早饭", :data-pinyin "chīzǎofàn"}
+           [:ruby "吃" [:rt "chī"]]
+           [:ruby "早" [:rt "zǎo"]]
+           [:ruby "饭" [:rt "fàn"]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我出门去上班。",
+           :data-pinyin "Wǒ chūmén qù shàngbān."}
+          [:span
+           {:class "phrase",
+            :data-text "我出门去上班",
+            :data-pinyin "wǒ chūmén qù shàngbān"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "出门", :data-pinyin "chūmén"}
+            [:ruby "出" [:rt "chū"]]
+            [:ruby "门" [:rt "mén"]]]
+           [:span
+            {:class "word", :data-text "去", :data-pinyin "qù"}
+            [:ruby "去" [:rt "qù"]]]
+           [:span
+            {:class "word", :data-text "上班", :data-pinyin "shàngbān"}
+            [:ruby "上" [:rt "shàng"]]
+            [:ruby "班" [:rt "bān"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]],
+       :annotate [:pinyin]}
+      [:p "Sentence builder"]
+      {:instruction ["Arrange the words to form a correct sentence."],
+       :hint ["Start with the pronoun"],
+       :type :sentence-builder,
+       :id #uuid "d6d840b2-d7e3-452b-8d6a-7d19790878a8",
+       :sentences
+       [{:words
+         [[:ruby "我" [:rt "wǒ"]]
+          [:ruby "喜欢" [:rt "xǐhuān"]]
+          [:ruby "黑色" [:rt "hēisè"]]
+          [:ruby "的" [:rt "de"]]
+          [:ruby "猫" [:rt "māo"]]],
+         :answers
+         [[[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "黑色" [:rt "hēisè"]]
+           [:ruby "的" [:rt "de"]]
+           [:ruby "猫" [:rt "māo"]]]]}],
+       :annotate [:pinyin]}
+      [:p "Cloze drag"]
+      {:instruction
+       ["Fill the blank with the correct characters (words)."],
+       :hint ["Think about buying a SIM card"],
        :type :cloze-drag,
-       :id #uuid "4cbbe585-44d4-4617-a290-93bfd4746db3",
+       :id #uuid "861d02ce-2572-40db-9892-7d4a15072a5e",
        :sentences
        [[{:kind :text,
-          :value
-          [:ruby
-           [:span "我想买一张"]
-           [:rp " ("]
-           [:rt "Wǒ xiǎng mǎi yī zhāng"]
-           [:rp ")"]]}
-         {:kind :blank, :answer "手机"}
+          :value [:ruby "我想买一张" [:rt "wǒ xiǎng mǎi yī zhāng"]]}
+         {:kind :blank, :answer [:ruby "手机" [:rt "shǒujī"]]}
+         {:kind :text, :value [:ruby "卡。" [:rt "kǎ."]]}]
+        [{:kind :text, :value [:ruby "我听不" [:rt "wǒ tīng bù"]]}
+         {:kind :blank, :answer [:ruby "懂" [:rt "dǒng"]]}
          {:kind :text,
           :value
-          [:ruby [:span "卡。"] [:rp " ("] [:rt "kǎ."] [:rp ")"]]}]
-        [{:kind :text,
-          :value
-          [:ruby
-           [:span "我听不"]
-           [:rp " ("]
-           [:rt "Wǒ tīng bù"]
-           [:rp ")"]]}
-         {:kind :blank, :answer "懂"}
-         {:kind :text,
-          :value
-          [:ruby
-           [:span "，可以再说一遍吗？"]
-           [:rp " ("]
-           [:rt ", kěyǐ zài shuō yī biàn ma?"]
-           [:rp ")"]]}
-         {:kind :blank, :answer "慢"}
-         {:kind :text,
-          :value
-          [:ruby [:span "一点。"] [:rp " ("] [:rt "yìdiǎn."] [:rp ")"]]}]
-        [{:kind :text,
-          :value
-          [:ruby [:span "可以用"] [:rp " ("] [:rt "Kěyǐ yòng"] [:rp ")"]]}
-         {:kind :blank, :answer "支付宝"}
-         {:kind :text,
-          :value
-          [:ruby [:span "吗？"] [:rp " ("] [:rt "ma?"] [:rp ")"]]}]]}],
-     :title ["Text section with exercises"]}
+          [:ruby "，可以再说一遍吗？" [:rt ", kěyǐ zàishuō yī biàn ma?"]]}
+         {:kind :blank, :answer [:ruby "慢" [:rt "màn"]]}
+         {:kind :text, :value [:ruby "一点。" [:rt "yīdiǎn."]]}]
+        [{:kind :text, :value [:ruby "可以用" [:rt "kěyǐ yòng"]]}
+         {:kind :blank, :answer [:ruby "支付宝" [:rt "zhīfùbǎo"]]}
+         {:kind :text, :value [:ruby "吗？" [:rt "ma?"]]}]],
+       :annotate [:pinyin]}
+      [:p "Cloze multi"]
+      {:instruction ["Fill in the blanks."],
+       :type :cloze-multi,
+       :id #uuid "f9f5e923-5e7f-4501-92e2-b7f64662f6f5",
+       :segments
+       [{:kind :text,
+         :value [:ruby "法国的首都是" [:rt "fǎguó de shǒudū shì"]]}
+        {:kind :blank,
+         :answer [:ruby "巴黎" [:rt "bālí"]],
+         :placeholder "城市"}
+        {:kind :text, :value [:ruby "，货币是" [:rt ", huòbì shì"]]}
+        {:kind :blank, :answer [:ruby "欧元" [:rt "ōuyuán"]]}
+        {:kind :text, :value "。"}],
+       :annotate [:pinyin]}
+      [:p "Word placement"]
+      {:instruction ["Place each word in the correct gap."],
+       :hint ["One gap is a decoy and needs no word"],
+       :type :word-placement,
+       :id #uuid "6367983c-7040-4dee-a8d6-8561356c8056",
+       :sentences
+       [{:segments
+         [{:kind :text, :value [:ruby "她跑得 " [:rt "tā pǎodé"]]}
+          {:kind :gap, :answer-index 1}
+          {:kind :text, :value [:ruby " 快，我 " [:rt "kuài, wǒ"]]}
+          {:kind :gap, :answer-index 2}
+          {:kind :text, :value [:ruby " 喜欢她。" [:rt "xǐhuān tā."]]}],
+         :words
+         [[:ruby "很" [:rt "hěn"]] [:ruby "非常" [:rt "fēicháng"]]]}],
+       :annotate [:pinyin]}
+      [:p "Word reorder"]
+      {:instruction ["Put the words in the right order."],
+       :type :word-reorder,
+       :id #uuid "1c929544-c99d-4769-a3b7-60ec9e2bca2c",
+       :sentences
+       [{:segments
+         [{:kind :word, :value [:ruby "我" [:rt "wǒ"]]}
+          {:kind :word, :value [:ruby "喜欢" [:rt "xǐhuān"]]}
+          {:kind :word, :value [:ruby "猫" [:rt "māo"]]}
+          {:kind :punctuation, :value "，"}
+          {:kind :word, :value [:ruby "狗" [:rt "gǒu"]]}
+          {:kind :word, :value [:ruby "和" [:rt "hé"]]}
+          {:kind :word, :value [:ruby "鸟" [:rt "niǎo"]]}
+          {:kind :punctuation, :value "。"}],
+         :answers
+         [[[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "猫" [:rt "māo"]]
+           "，"
+           [:ruby "狗" [:rt "gǒu"]]
+           [:ruby "和" [:rt "hé"]]
+           [:ruby "鸟" [:rt "niǎo"]]
+           "。"]
+          [[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "鸟" [:rt "niǎo"]]
+           "，"
+           [:ruby "猫" [:rt "māo"]]
+           [:ruby "和" [:rt "hé"]]
+           [:ruby "狗" [:rt "gǒu"]]
+           "。"]]}
+        {:segments
+         [{:kind :word, :value [:ruby "我" [:rt "wǒ"]]}
+          {:kind :word, :value [:ruby "喜欢" [:rt "xǐhuān"]]}
+          {:kind :word, :value [:ruby "茶" [:rt "chá"]]}
+          {:kind :punctuation, :value "。"}],
+         :answers
+         [[[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "茶" [:rt "chá"]]
+           "。"]]}],
+       :annotate [:pinyin]}],
+     :title ["Annotated Chinese exercises"]}
     {:key :exercises,
      :content
-     [{:type :cloze-drag,
-       :id #uuid "c13da703-c77c-46e5-9660-fff8214f4dc8",
+     [{:instruction
+       ["Fill the blank with the correct characters (words)."],
+       :type :cloze-drag,
+       :id #uuid "91b19316-f27d-4367-bb22-bb1127ada8ce",
        :sentences
-       [[{:kind :text, :value "我想买一张"}
-         {:kind :blank, :answer "手机"}
-         {:kind :text, :value "卡。"}]
-        [{:kind :text, :value "我听不"}
-         {:kind :blank, :answer "懂"}
-         {:kind :text, :value "，可以再说一遍吗？"}
-         {:kind :blank, :answer "慢"}
-         {:kind :text, :value "一点。"}]
-        [{:kind :text, :value "可以用"}
-         {:kind :blank, :answer "支付宝"}
-         {:kind :text, :value "吗？"}]]}
+       [[{:kind :text,
+          :value [:ruby "我想买一张" [:rt "wǒ xiǎng mǎi yī zhāng"]]}
+         {:kind :blank, :answer [:ruby "手机" [:rt "shǒujī"]]}
+         {:kind :text, :value [:ruby "卡。" [:rt "kǎ."]]}]
+        [{:kind :text, :value [:ruby "可以用" [:rt "kěyǐ yòng"]]}
+         {:kind :blank, :answer [:ruby "支付宝" [:rt "zhīfùbǎo"]]}
+         {:kind :text, :value [:ruby "吗？" [:rt "ma?"]]}]],
+       :annotate [:pinyin]}
       {:instruction ["Select the correct translation for \"House\"."],
        :type :multiple-choice,
-       :id #uuid "1640e586-7fd3-4231-8878-59d415722404",
+       :id #uuid "7efe64cd-8be5-41d2-bd36-bb0eca5992e9",
        :options
        [{:content ["Casa"], :correct true}
         {:content ["Perro"], :correct false}
         {:content ["Gato"], :correct false}]}
       {:type :pairs,
-       :id #uuid "de87c003-f2d7-4886-a169-e123cb02bc3f",
+       :id #uuid "5cad054b-29f0-4cf6-b4c0-919dc7e96e68",
        :pairs
-       [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}],
-     :title ["Test exercise runner section"]}]}
+       [[[[:span
+           {:class "word", :data-text "手机卡", :data-pinyin "shǒujīkǎ"}
+           [:ruby "手" [:rt "shǒu"]]
+           [:ruby "机" [:rt "jī"]]
+           [:ruby "卡" [:rt "kǎ"]]]]
+         ["SIM card"]]
+        [[[:span
+           {:class "word", :data-text "流量", :data-pinyin "liúliàng"}
+           [:ruby "流" [:rt "liú"]]
+           [:ruby "量" [:rt "liàng"]]]]
+         ["mobile data"]]],
+       :annotate [:pinyin nil]}],
+     :title ["Exercises"]}]}
   {:custom-id "lesson-2",
-   :id #uuid "e4333fca-6471-4bb6-a3a1-fad73206f355",
+   :id #uuid "31e1fad9-7416-40d2-86d6-8a3454894803",
    :title ["Chapter 2: Exercises without instructions and hints"],
    :sections
    [{:key :text,
      :content
-     [[:p "Sentence Builder Exercise"]
+     [[:p "Sentence builder"]
       {:type :sentence-builder,
-       :id #uuid "87eaf178-2001-4460-bfcb-139ec07405c9",
-       :words ["cats" "black" "like" "I"],
-       :answers [["I" "like" "black" "cats"]],
-       :extra-words ["wear"]}
-      [:ul [:li "Multiple Choice Exercise"]]
+       :id #uuid "a68b2adc-2d26-46c9-abd8-998679576459",
+       :sentences
+       [{:words ["丁力波" "把" "这些" "汉字" "写" "在" "本子" "上。"],
+         :answers [["丁力波" "把" "这些" "汉字" "写" "在" "本子" "上。"]]}
+        {:words ["你" "把" "这个词" "翻议" "成" "英文。"],
+         :answers [["你" "把" "这个词" "翻议" "成" "英文。"]]}]}
+      [:p "Multiple choice"]
       {:type :multiple-choice,
-       :id #uuid "45f86f56-6afe-403d-b8f0-0c993de8d68b",
+       :id #uuid "852982d9-8c3d-4777-a46b-0d86574407c6",
        :options
        [{:content ["Casa"], :correct true}
         {:content ["Perro"], :correct false}
         {:content ["Gato"], :correct false}]}
-      [:ul [:li "Pairs Exercise"]]
+      [:p "Pairs"]
       {:type :pairs,
-       :id #uuid "af8a12ce-872e-4eb0-8615-f81b66b91594",
+       :id #uuid "e4655d71-35d6-4856-8528-da2d8b6a1196",
        :pairs
        [[["House"] ["Casa"]] [["Dog"] ["Perro"]] [["Cat"] ["Gato"]]]}
-      [:ul [:li "Sentence Order Exercise"]]
+      [:p "Sentence order"]
       {:type :sentence-order,
-       :id #uuid "f19b68f0-eefb-40b9-a428-e40fb30010eb",
+       :id #uuid "2ab2798d-90f5-4dfd-b109-4cd89402a898",
        :sentences
        [["I woke up at 7 AM."]
         ["I brushed my teeth and had breakfast."]
         ["I left the house for work."]]}
-      [:ul [:li "Cloze Multi Exercise"]]
+      [:p "Cloze multi"]
       {:type :cloze-multi,
-       :id #uuid "200e7e01-3528-47fc-b0ce-a8408932ccb5",
+       :id #uuid "aeedc893-1ca8-41b7-84f5-d364ee505b87",
        :segments
        [{:kind :text, :value "The capital of France is "}
         {:kind :blank, :answer "Paris", :placeholder "city"}
         {:kind :text, :value " and its currency is "}
         {:kind :blank, :answer "Euro"}
         {:kind :text, :value "."}]}
-      [:ul [:li "fill blank"]]
-      {:type :cloze-multi,
-       :id #uuid "3dfc8f96-a1ed-47ad-be3a-398c21dab9f8",
-       :segments
-       [{:kind :text, :value "我 "}
-        {:kind :blank, :answer "喜欢吃", :placeholder "like to eat"}
-        {:kind :text, :value " 苹果。"}]}
-      [:ul [:li "word-placement"]]
-      {:instruction ["Put the words in the right place."],
-       :type :word-placement,
-       :id #uuid "dc9fcbb0-eb2c-486a-8171-ffb4689c742d",
+      [:p "Word placement"]
+      {:type :word-placement,
+       :id #uuid "b4ab36c5-c67a-4b1a-901b-8b7cbf88986a",
        :sentences
        [{:segments
-         [{:kind :text, :value "她 "}
-          {:kind :gap}
-          {:kind :text, :value " 跑 "}
-          {:kind :gap, :answer-index 1}
-          {:kind :text, :value " 很快，我 "}
-          {:kind :gap}
-          {:kind :text, :value " 喜欢 她 "}
-          {:kind :gap, :answer-index 2}
-          {:kind :text, :value " 速度。"}],
-         :words ["得" "的"]}
-        {:segments
          [{:kind :text, :value "I like "}
           {:kind :gap, :answer-index 1}
           {:kind :text, :value " cats "}
           {:kind :gap, :answer-index 2}
           {:kind :text, :value " dogs"}],
          :words ["black" "and"]}]}
-      [:ul [:li "word-reorder"]]
-      {:instruction ["Put the words in the right order."],
-       :type :word-reorder,
-       :id #uuid "48ce84fa-f34c-4aaa-8b8d-151dbae08f51",
+      [:p "Word reorder"]
+      {:type :word-reorder,
+       :id #uuid "89b63745-fd55-43ad-9db6-a3b9e2b57122",
        :sentences
        [{:segments
          [{:kind :word, :value "I"}
@@ -258,11 +507,219 @@
           {:kind :word, :value "tea"}
           {:kind :punctuation, :value "."}],
          :answers [["I" "like" "tea" "."]]}]}],
-     :title ["Text section with exercises"]}
+     :title ["Plain exercises"]}
+    {:key :text,
+     :content
+     [[:p "Pairs"]
+      {:type :pairs,
+       :id #uuid "9ae485af-a564-4437-97f1-7848fab6c190",
+       :pairs
+       [[[[:span
+           {:class "word", :data-text "手机卡", :data-pinyin "shǒujīkǎ"}
+           [:ruby "手" [:rt "shǒu"]]
+           [:ruby "机" [:rt "jī"]]
+           [:ruby "卡" [:rt "kǎ"]]]]
+         ["SIM card"]]
+        [[[:span
+           {:class "phrase", :data-text "绑定", :data-pinyin "bǎng dìng"}
+           [:span
+            {:class "word", :data-text "绑", :data-pinyin "bǎng"}
+            [:ruby "绑" [:rt "bǎng"]]]
+           [:span
+            {:class "word", :data-text "定", :data-pinyin "dìng"}
+            [:ruby "定" [:rt "dìng"]]]]]
+         ["to link/ bind"]]],
+       :annotate [:pinyin nil]}
+      [:p "Multiple choice"]
+      {:type :multiple-choice,
+       :id #uuid "dc73a2a6-e5cb-4131-a77b-8703d79adac1",
+       :options
+       [{:content
+         [[:span
+           {:class "word", :data-text "房子", :data-pinyin "fángzi"}
+           [:ruby "房" [:rt "fáng"]]
+           [:ruby "子" [:rt "zi"]]]],
+         :correct true}
+        {:content
+         [[:span
+           {:class "word", :data-text "猫", :data-pinyin "māo"}
+           [:ruby "猫" [:rt "māo"]]]],
+         :correct false}
+        {:content
+         [[:span
+           {:class "word", :data-text "苹果", :data-pinyin "píngguǒ"}
+           [:ruby "苹" [:rt "píng"]]
+           [:ruby "果" [:rt "guǒ"]]]],
+         :correct false}],
+       :annotate [:pinyin]}
+      [:p "Sentence order"]
+      {:type :sentence-order,
+       :id #uuid "6e1ede7c-4a39-4ac0-abac-8fe291fd0155",
+       :sentences
+       [[[:span
+          {:class "sentence",
+           :data-text "我早上七点起床。",
+           :data-pinyin "Wǒ zǎoshàng qī diǎn qǐchuáng."}
+          [:span
+           {:class "phrase",
+            :data-text "我早上七点起床",
+            :data-pinyin "wǒ zǎoshàng qī diǎn qǐchuáng"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "早上", :data-pinyin "zǎoshàng"}
+            [:ruby "早" [:rt "zǎo"]]
+            [:ruby "上" [:rt "shàng"]]]
+           [:span
+            {:class "word", :data-text "七", :data-pinyin "qī"}
+            [:ruby "七" [:rt "qī"]]]
+           [:span
+            {:class "word", :data-text "点", :data-pinyin "diǎn"}
+            [:ruby "点" [:rt "diǎn"]]]
+           [:span
+            {:class "word", :data-text "起床", :data-pinyin "qǐchuáng"}
+            [:ruby "起" [:rt "qǐ"]]
+            [:ruby "床" [:rt "chuáng"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我刷牙，吃早饭。",
+           :data-pinyin "Wǒ shuāyá, chīzǎofàn."}
+          [:span
+           {:class "phrase",
+            :data-text "我刷牙",
+            :data-pinyin "wǒ shuāyá"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "刷牙", :data-pinyin "shuāyá"}
+            [:ruby "刷" [:rt "shuā"]]
+            [:ruby "牙" [:rt "yá"]]]]
+          [:span
+           {:class "punct", :data-text "，", :data-pinyin ", "}
+           "，"]
+          [:span
+           {:class "word", :data-text "吃早饭", :data-pinyin "chīzǎofàn"}
+           [:ruby "吃" [:rt "chī"]]
+           [:ruby "早" [:rt "zǎo"]]
+           [:ruby "饭" [:rt "fàn"]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我出门去上班。",
+           :data-pinyin "Wǒ chūmén qù shàngbān."}
+          [:span
+           {:class "phrase",
+            :data-text "我出门去上班",
+            :data-pinyin "wǒ chūmén qù shàngbān"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "出门", :data-pinyin "chūmén"}
+            [:ruby "出" [:rt "chū"]]
+            [:ruby "门" [:rt "mén"]]]
+           [:span
+            {:class "word", :data-text "去", :data-pinyin "qù"}
+            [:ruby "去" [:rt "qù"]]]
+           [:span
+            {:class "word", :data-text "上班", :data-pinyin "shàngbān"}
+            [:ruby "上" [:rt "shàng"]]
+            [:ruby "班" [:rt "bān"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]],
+       :annotate [:pinyin]}
+      [:p "Cloze drag"]
+      {:type :cloze-drag,
+       :id #uuid "3c7b34e3-d7c1-4858-a60a-477cb84ba8f1",
+       :sentences
+       [[{:kind :text,
+          :value [:ruby "我想买一张" [:rt "wǒ xiǎng mǎi yī zhāng"]]}
+         {:kind :blank, :answer [:ruby "手机" [:rt "shǒujī"]]}
+         {:kind :text, :value [:ruby "卡。" [:rt "kǎ."]]}]
+        [{:kind :text, :value [:ruby "可以用" [:rt "kěyǐ yòng"]]}
+         {:kind :blank, :answer [:ruby "支付宝" [:rt "zhīfùbǎo"]]}
+         {:kind :text, :value [:ruby "吗？" [:rt "ma?"]]}]],
+       :annotate [:pinyin]}
+      [:p "Cloze multi"]
+      {:type :cloze-multi,
+       :id #uuid "ca8a52d7-cbc2-4e96-b165-5b379aabebc4",
+       :segments
+       [{:kind :text, :value [:ruby "我 " [:rt "wǒ"]]}
+        {:kind :blank,
+         :answer [:ruby "喜欢吃" [:rt "xǐhuān chī"]],
+         :placeholder "like to eat"}
+        {:kind :text, :value [:ruby " 苹果。" [:rt "píngguǒ."]]}],
+       :annotate [:pinyin]}
+      [:p "Word placement"]
+      {:type :word-placement,
+       :id #uuid "674b6492-7635-466d-b9b9-13c87ed5d199",
+       :sentences
+       [{:segments
+         [{:kind :text, :value [:ruby "她 " [:rt "tā"]]}
+          {:kind :gap}
+          {:kind :text, :value [:ruby " 跑 " [:rt "pǎo"]]}
+          {:kind :gap, :answer-index 1}
+          {:kind :text, :value [:ruby " 很快，我 " [:rt "hěnkuài, wǒ"]]}
+          {:kind :gap}
+          {:kind :text, :value [:ruby " 喜欢 她 " [:rt "xǐhuān tā"]]}
+          {:kind :gap, :answer-index 2}
+          {:kind :text, :value [:ruby " 速度。" [:rt "sùdù."]]}],
+         :words [[:ruby "得" [:rt "dé"]] [:ruby "的" [:rt "de"]]]}],
+       :annotate [:pinyin]}
+      [:p "Word reorder"]
+      {:type :word-reorder,
+       :id #uuid "a02e646f-151e-48af-801c-ad2b39b5ae6b",
+       :sentences
+       [{:segments
+         [{:kind :word, :value [:ruby "我" [:rt "wǒ"]]}
+          {:kind :word, :value [:ruby "喜欢" [:rt "xǐhuān"]]}
+          {:kind :word, :value [:ruby "猫" [:rt "māo"]]}
+          {:kind :punctuation, :value "，"}
+          {:kind :word, :value [:ruby "狗" [:rt "gǒu"]]}
+          {:kind :word, :value [:ruby "和" [:rt "hé"]]}
+          {:kind :word, :value [:ruby "鸟" [:rt "niǎo"]]}
+          {:kind :punctuation, :value "。"}],
+         :answers
+         [[[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "猫" [:rt "māo"]]
+           "，"
+           [:ruby "狗" [:rt "gǒu"]]
+           [:ruby "和" [:rt "hé"]]
+           [:ruby "鸟" [:rt "niǎo"]]
+           "。"]
+          [[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "鸟" [:rt "niǎo"]]
+           "，"
+           [:ruby "猫" [:rt "māo"]]
+           [:ruby "和" [:rt "hé"]]
+           [:ruby "狗" [:rt "gǒu"]]
+           "。"]]}
+        {:segments
+         [{:kind :word, :value [:ruby "我" [:rt "wǒ"]]}
+          {:kind :word, :value [:ruby "喜欢" [:rt "xǐhuān"]]}
+          {:kind :word, :value [:ruby "茶" [:rt "chá"]]}
+          {:kind :punctuation, :value "。"}],
+         :answers
+         [[[:ruby "我" [:rt "wǒ"]]
+           [:ruby "喜欢" [:rt "xǐhuān"]]
+           [:ruby "茶" [:rt "chá"]]
+           "。"]]}],
+       :annotate [:pinyin]}],
+     :title ["Annotated Chinese exercises"]}
     {:key :exercises,
      :content
      [{:type :sentence-order,
-       :id #uuid "21fcc129-aec1-4913-be97-089830eed3bd",
+       :id #uuid "8565027f-7ac1-4ee1-81a8-ffcebf8fb5f4",
        :sentences
        [["I woke up at 7 AM."]
         ["I brushed my teeth and had breakfast."]
@@ -270,15 +727,95 @@
       {:instruction ["Arrange the words to form a correct sentence."],
        :hint ["Start with the pronoun"],
        :type :sentence-builder,
-       :id #uuid "ab6b82f3-dd86-4788-9232-17eba589d328",
-       :words ["cats" "I" "dogs" "like" "and" "black"],
-       :answers [["I" "like" "black" "cats" "and" "dogs"]],
-       :extra-words ["eat"]}
-      {:instruction ["Reorder sentences to form a logical story."],
-       :hint ["some hint"],
-       :type :sentence-order,
-       :id #uuid "68713379-5a32-4c4a-8272-beaf5ff8cfdf",
-       :sentences [["one"] ["two"] ["three"]]}],
-     :title ["Test exercise runner section"]}]}],
+       :id #uuid "26833b13-cce9-4713-95a0-8624c6f51b46",
+       :sentences
+       [{:words ["cats" "I" "dogs" "like" "and" "black"],
+         :answers
+         [["cats" "I" "dogs" "like" "and" "black"]
+          ["I" "like" "black" "cats" "and" "dogs"]]}]}
+      {:type :sentence-order,
+       :id #uuid "3db58184-c671-4fcd-bb57-27513015d138",
+       :sentences
+       [[[:span
+          {:class "sentence",
+           :data-text "我早上七点起床。",
+           :data-pinyin "Wǒ zǎoshàng qī diǎn qǐchuáng."}
+          [:span
+           {:class "phrase",
+            :data-text "我早上七点起床",
+            :data-pinyin "wǒ zǎoshàng qī diǎn qǐchuáng"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "早上", :data-pinyin "zǎoshàng"}
+            [:ruby "早" [:rt "zǎo"]]
+            [:ruby "上" [:rt "shàng"]]]
+           [:span
+            {:class "word", :data-text "七", :data-pinyin "qī"}
+            [:ruby "七" [:rt "qī"]]]
+           [:span
+            {:class "word", :data-text "点", :data-pinyin "diǎn"}
+            [:ruby "点" [:rt "diǎn"]]]
+           [:span
+            {:class "word", :data-text "起床", :data-pinyin "qǐchuáng"}
+            [:ruby "起" [:rt "qǐ"]]
+            [:ruby "床" [:rt "chuáng"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我刷牙，吃早饭。",
+           :data-pinyin "Wǒ shuāyá, chīzǎofàn."}
+          [:span
+           {:class "phrase",
+            :data-text "我刷牙",
+            :data-pinyin "wǒ shuāyá"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "刷牙", :data-pinyin "shuāyá"}
+            [:ruby "刷" [:rt "shuā"]]
+            [:ruby "牙" [:rt "yá"]]]]
+          [:span
+           {:class "punct", :data-text "，", :data-pinyin ", "}
+           "，"]
+          [:span
+           {:class "word", :data-text "吃早饭", :data-pinyin "chīzǎofàn"}
+           [:ruby "吃" [:rt "chī"]]
+           [:ruby "早" [:rt "zǎo"]]
+           [:ruby "饭" [:rt "fàn"]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]
+        [[:span
+          {:class "sentence",
+           :data-text "我出门去上班。",
+           :data-pinyin "Wǒ chūmén qù shàngbān."}
+          [:span
+           {:class "phrase",
+            :data-text "我出门去上班",
+            :data-pinyin "wǒ chūmén qù shàngbān"}
+           [:span
+            {:class "word", :data-text "我", :data-pinyin "wǒ"}
+            [:ruby "我" [:rt "wǒ"]]]
+           [:span
+            {:class "word", :data-text "出门", :data-pinyin "chūmén"}
+            [:ruby "出" [:rt "chū"]]
+            [:ruby "门" [:rt "mén"]]]
+           [:span
+            {:class "word", :data-text "去", :data-pinyin "qù"}
+            [:ruby "去" [:rt "qù"]]]
+           [:span
+            {:class "word", :data-text "上班", :data-pinyin "shàngbān"}
+            [:ruby "上" [:rt "shàng"]]
+            [:ruby "班" [:rt "bān"]]]]
+          [:span
+           {:class "punct", :data-text "。", :data-pinyin "."}
+           "。"]]]],
+       :annotate [:pinyin]}],
+     :title ["Exercises"]}]}],
  :version 0,
- :created-at "2026-10-12T15:12:33.707201694Z"}
+ :created-at "2026-10-15T09:35:29.279238669Z"}

@@ -1,7 +1,6 @@
 #+TITLE: Exercises Collection - Special Blocks
 :PROPERTIES:
 :COURSE_TYPE: base
-:COURSE_LICENSE: MIT
 :END:
 
 * Chapter 1: Exercises with instructions and hints
@@ -9,26 +8,34 @@
 :CUSTOM_ID: lesson-1
 :END:
 
-** Text section with exercises
+** Plain exercises
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: text
 :END:
 
-Sentence Builder Exercise
+Sentence builder
 
 #+begin_exercise :type sentence-builder
-#+instruction: Arrange the words to form a correct sentence.
-#+hint: Start with the pronoun
-cats black like I
-:ANSWERS:
- - I like black cats
-:END:
+#+instruction: Put the words in the right order.
+#+hint: think about subject-verb-object order
+I like black cats and dogs
+:answers:
+ - I like black cats and dogs
+ - I like black dogs and cats
+:end:
+:extra-words:
+wear sleep
+:end:
+:canonical:
+I like black cats and dogs.
+:end:
 #+end_exercise
 
-- Multiple Choice Exercise
+Multiple choice
 
 #+begin_exercise :type multiple-choice
 #+instruction: Select the correct translation for "House".
+#+hint: Think of Spanish
 - Casa
 - Perro
 - Gato
@@ -37,22 +44,16 @@ cats black like I
 :END:
 #+end_exercise
 
-- Pairs Exercise
+Pairs
 
 #+begin_exercise :type pairs
+#+instruction: Match each word to its translation.
 | House | Casa  |
 | Dog   | Perro |
 | Cat   | Gato  |
 #+end_exercise
 
-#+begin_exercise :type pairs
-| [[./assets/rice.jpg][cooked rice]]       | {{{rb(一碗米饭,yī wǎn mǐfàn)}}} |
-| [[./flower-tea.jpg][flower tea]]         | {{{rb(一壶花茶,yī hú huāchá)}}} |
-| [[./scrambled-eggs.jpg][scrambled eggs]] | {{{rb(一盘西红柿炒鸡蛋,yī pán xīhóngshì chǎo jīdàn)}}} |
-| [[./assets/roast-duck.jpg][roast duck]]   | {{{rb(一只烤鸭,yī zhī kǎo yā)}}} |
-#+end_exercise
-
-- Sentence Order Exercise
+Sentence order
 
 #+begin_exercise :type sentence-order
 #+instruction: Reorder sentences to form a logical story.
@@ -62,7 +63,7 @@ cats black like I
 3. I left the house for work.
 #+end_exercise
 
-- Cloze Multi Exercise
+Cloze multi
 
 #+begin_exercise :type cloze-multi
 #+hint: Geography and currency
@@ -73,30 +74,118 @@ The capital of France is {|city} and its currency is {}.
 :END:
 #+end_exercise
 
-- cloze drag
+** Annotated Chinese exercises
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
 
-#+begin_exercise :type cloze-drag
-#+instruction: fill blank with correct characters (words)
+Pairs (annotate first column only)
+
+#+begin_exercise :type pairs :annotate '(pinyin nil)
+#+instruction: Match each word to its translation.
+#+hint: Think of a mobile phone plan
+| 手机卡 | SIM card      |
+| 绑定   | to link/ bind |
+| 流量   | mobile data   |
+#+end_exercise
+
+Pairs with images (annotate second column only)
+
+#+begin_exercise :type pairs :annotate '(nil pinyin)
+#+instruction: Match each picture to its description.
+| [[./assets/rice.jpg][cooked rice]]    | 一碗米饭       |
+| [[./assets/flower-tea.jpg][flower tea]]     | 一壶花茶       |
+| [[./assets/scrambled-eggs.jpg][scrambled eggs]] | 一盘西红柿炒鸡蛋 |
+| [[./assets/roast-duck.jpg][roast duck]]     | 一只烤鸭       |
+#+end_exercise
+
+Multiple choice
+
+#+begin_exercise :type multiple-choice :annotate pinyin
+#+instruction: Choose the correct translation for "mobile data".
+#+hint: Think of 手机
+- 流量
+- 绑定
+- 支付宝
+:ANSWERS:
+0
+:END:
+#+end_exercise
+
+Sentence order
+
+#+begin_exercise :type sentence-order :annotate pinyin
+#+instruction: Reorder sentences to form a logical story.
+1. 我早上七点起床。
+2. 我刷牙，吃早饭。
+3. 我出门去上班。
+#+end_exercise
+
+Sentence builder
+
+#+begin_exercise :type sentence-builder :annotate pinyin
+#+instruction: Arrange the words to form a correct sentence.
+#+hint: Start with the pronoun
+我 喜欢 黑色 的 猫
+
+吃
+:ANSWERS:
+ - 我 喜欢 黑色 的 猫
+:END:
+#+end_exercise
+
+Cloze drag
+
+#+begin_exercise :type cloze-drag :annotate pinyin
+#+instruction: Fill the blank with the correct characters (words).
+#+hint: Think about buying a SIM card
 - 我想买一张[[手机]]卡。
 - 我听不[[懂]]，可以再说一遍吗？[[慢]]一点。
 - 可以用[[支付宝]]吗？
 #+end_exercise
 
-#+begin_exercise :type cloze-drag
-#+instruction: fill blank with correct characters (words)
-- {{{rb(我想买一张,Wǒ xiǎng mǎi yī zhāng)}}}[[手机]]{{{rb(卡。,kǎ.)}}}
-- {{{rb(我听不,Wǒ tīng bù)}}}[[懂]]{{{rb(，可以再说一遍吗？,\, kěyǐ zài shuō yī biàn ma?)}}}[[慢]]{{{rb(一点。,yìdiǎn.)}}}
-- {{{rb(可以用,Kěyǐ yòng)}}}[[支付宝]]{{{rb(吗？,ma?)}}}
+Cloze multi
+
+#+begin_exercise :type cloze-multi :annotate pinyin
+#+instruction: Fill in the blanks.
+法国的首都是{|城市}，货币是{}。
+:ANSWERS:
+ - 巴黎
+ - 欧元
+:END:
 #+end_exercise
 
-** Test exercise runner section
+Word placement
+
+#+begin_exercise :type word-placement :annotate pinyin
+#+instruction: Place each word in the correct gap.
+#+hint: One gap is a decoy and needs no word
+- 她跑得 ^{1} 快，我 ^{2} 喜欢她。
+  :WORDS:
+  很 非常
+  :END:
+#+end_exercise
+
+Word reorder
+
+#+begin_exercise :type word-reorder :annotate pinyin
+#+instruction: Put the words in the right order.
+- 我 喜欢 猫，狗 和 鸟。
+  :ANSWERS:
+  - 我 喜欢 猫，狗 和 鸟。
+  - 我 喜欢 鸟，猫 和 狗。
+  :END:
+- 我 喜欢 茶。
+#+end_exercise
+
+** Exercises
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: exercises
 :END:
 
-#+begin_exercise :type cloze-drag
+#+begin_exercise :type cloze-drag :annotate pinyin
+#+instruction: Fill the blank with the correct characters (words).
 - 我想买一张[[手机]]卡。
-- 我听不[[懂]]，可以再说一遍吗？[[慢]]一点。
 - 可以用[[支付宝]]吗？
 #+end_exercise
 
@@ -110,10 +199,9 @@ The capital of France is {|city} and its currency is {}.
 :END:
 #+end_exercise
 
-#+begin_exercise :type pairs
-| House | Casa  |
-| Dog   | Perro |
-| Cat   | Gato  |
+#+begin_exercise :type pairs :annotate '(pinyin nil)
+| 手机卡 | SIM card    |
+| 流量   | mobile data |
 #+end_exercise
 
 * Chapter 2: Exercises without instructions and hints
@@ -121,23 +209,19 @@ The capital of France is {|city} and its currency is {}.
 :CUSTOM_ID: lesson-2
 :END:
 
-** Text section with exercises
+** Plain exercises
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: text
 :END:
 
-Sentence Builder Exercise
+Sentence builder
 
 #+begin_exercise :type sentence-builder
-cats black like I
-
-wear
-:ANSWERS:
- - I like black cats
-:END:
+ - 丁力波 把 这些 汉字 写 在 本子 上。
+ - 你 把 这个词 翻议 成 英文。
 #+end_exercise
 
-- Multiple Choice Exercise
+Multiple choice
 
 #+begin_exercise :type multiple-choice
 - Casa
@@ -148,7 +232,7 @@ wear
 :END:
 #+end_exercise
 
-- Pairs Exercise
+Pairs
 
 #+begin_exercise :type pairs
 | House | Casa  |
@@ -156,7 +240,7 @@ wear
 | Cat   | Gato  |
 #+end_exercise
 
-- Sentence Order Exercise
+Sentence order
 
 #+begin_exercise :type sentence-order
 1. I woke up at 7 AM.
@@ -164,7 +248,7 @@ wear
 3. I left the house for work.
 #+end_exercise
 
-- Cloze Multi Exercise
+Cloze multi
 
 #+begin_exercise :type cloze-multi
 The capital of France is {|city} and its currency is {}.
@@ -174,33 +258,18 @@ The capital of France is {|city} and its currency is {}.
 :END:
 #+end_exercise
 
-- fill blank
-
-#+begin_exercise :type cloze-multi
-我 {|like to eat} 苹果。
-:ANSWERS:
- - 喜欢吃
-:END:
-#+end_exercise
-
-- word-placement
+Word placement
 
 #+begin_exercise :type word-placement
-#+instruction: Put the words in the right place.
-- 她 ^ 跑 ^{1} 很快，我 ^ 喜欢 她 ^{2} 速度。
-  :WORDS:
-  得 的
-  :END:
 - I like ^{1} cats ^{2} dogs
   :WORDS:
   black and
   :END:
 #+end_exercise
 
-- word-reorder
+Word reorder
 
 #+begin_exercise :type word-reorder
-#+instruction: Put the words in the right order.
 - I like birds, cats and dogs.
   :ANSWERS:
   - I like birds, cats and dogs.
@@ -210,7 +279,74 @@ The capital of France is {|city} and its currency is {}.
 - I like tea.
 #+end_exercise
 
-** Test exercise runner section
+** Annotated Chinese exercises
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: text
+:END:
+
+Pairs
+
+#+begin_exercise :type pairs :annotate '(pinyin nil)
+| 手机卡 | SIM card      |
+| 绑定   | to link/ bind |
+#+end_exercise
+
+Multiple choice
+
+#+begin_exercise :type multiple-choice :annotate pinyin
+- 房子
+- 猫
+- 苹果
+:ANSWERS:
+0
+:END:
+#+end_exercise
+
+Sentence order
+
+#+begin_exercise :type sentence-order :annotate pinyin
+1. 我早上七点起床。
+2. 我刷牙，吃早饭。
+3. 我出门去上班。
+#+end_exercise
+
+Cloze drag
+
+#+begin_exercise :type cloze-drag :annotate pinyin
+- 我想买一张[[手机]]卡。
+- 可以用[[支付宝]]吗？
+#+end_exercise
+
+Cloze multi
+
+#+begin_exercise :type cloze-multi :annotate pinyin
+我 {|like to eat} 苹果。
+:ANSWERS:
+ - 喜欢吃
+:END:
+#+end_exercise
+
+Word placement
+
+#+begin_exercise :type word-placement :annotate pinyin
+- 她 ^ 跑 ^{1} 很快，我 ^ 喜欢 她 ^{2} 速度。
+  :WORDS:
+  得 的
+  :END:
+#+end_exercise
+
+Word reorder
+
+#+begin_exercise :type word-reorder :annotate pinyin
+- 我 喜欢 猫，狗 和 鸟。
+  :ANSWERS:
+  - 我 喜欢 猫，狗 和 鸟。
+  - 我 喜欢 鸟，猫 和 狗。
+  :END:
+- 我 喜欢 茶。
+#+end_exercise
+
+** Exercises
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: exercises
 :END:
@@ -232,10 +368,8 @@ eat
 :END:
 #+end_exercise
 
-#+begin_exercise :type sentence-order
-#+instruction: Reorder sentences to form a logical story.
-#+hint: some hint
-1. one
-2. two
-3. three
+#+begin_exercise :type sentence-order :annotate pinyin
+1. 我早上七点起床。
+2. 我刷牙，吃早饭。
+3. 我出门去上班。
 #+end_exercise
